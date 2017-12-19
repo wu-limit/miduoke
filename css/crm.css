@@ -1,0 +1,487 @@
+.img-container {
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 95%;
+}
+
+.img-container img {
+    vertical-align: middle;
+}
+
+/* Reusable elements */
+
+/* Header section of each page */
+.header {
+    padding-top: 42px;
+    padding-bottom: 42px; 
+    text-align: center;
+}
+
+.header-darkgray {
+  /* Only using dark gray for documentation page, add padding top to center in header */
+  background-color: #757575;
+  color: white;
+}
+
+.header-grey {
+  background-color: #fbfcfd;
+}
+
+.header-white {
+  background-color: white;
+}
+
+/* Section elements */
+/* Section classes used for particular sections within a page. Sections should differ in background color when used next to each other */
+.section-white {
+    background-color: white;
+    padding: 56px 0;
+}
+
+.section-grey {
+  background-color: #fbfcfd;
+  padding: 56px 0;
+}
+
+/* Used to specifying when a section is at the top or bottom of the page to apply appropriate border */
+.top-section-border {
+    border-top: 1px solid #E0E0E0;
+}
+
+.bottom-section-border {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.section-content {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Icon above section header */
+.section-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header for each section */
+.section-header {
+    margin: 12px auto 8px;
+    text-align: center;
+}
+
+/* Used for descriptions of sections underneath section headers*/
+.support-paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Orange action button */
+.orange-button {
+    background-color: #E46E2E;
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 26px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 4px 0px 4px;
+}
+
+.orange-button:hover {
+    background-color: #F27624;
+    color: white;
+    text-decoration: none;
+}
+
+.orange-button:active, .orange-button:focus {
+    background-color: #DC601C;
+    color: white;
+    text-decoration: none;
+}
+
+/* Jupyter Notebook highlight section on front page */
+.nb-highlight-text {
+    margin-top: 100px;
+}
+
+.notebook-icon {
+    height: auto;
+    margin-right: 12px;
+    width: 60px;
+}
+
+/* Give space between the notebook features (4 features) on front page and the     img + description */
+.notebook-features {
+    margin-top: 32px;
+}
+
+.notebook-features p{
+    padding-top: 16px;
+}
+
+.nb-desc {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #4a5568;
+    font-family: "微软雅黑";
+}
+
+/* Install prompt on front page */
+.install-prompt {
+    background-color: #f5f5f5;
+    border-bottom-color: #e0e0e0;
+    border-left-style: none;
+    border-style: solid;
+    border-top-color: #e0e0e0;
+    border-width: thin;
+    border-right: 0px;
+    padding: 24px 0 42px 0;
+    text-align: center;
+}
+
+.prompt-header {
+    margin-bottom: 16px;
+}
+
+/* Companies section for only "Currently in use" (this section acts differently than customer logos in the "About" section of the site) */
+
+/*Section-center is used to center the companies on the home page & get rid of padding on left associated with ul*/
+.section-center {
+    text-align: center;
+}
+
+.companies li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2% 4%;
+    vertical-align: middle;
+/*    width: 18%;*/
+}
+
+.companies .col img{
+    display: block;
+    width: 100%;
+    max-height: 60px;
+}
+
+.greydout {
+    -moz-opacity: .065;
+    -webkit-opacity: 0.065;
+    opacity: 0.65;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.greydout:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+/* JupyterHub section on front page */
+/* Feature-middle is for the JupyterHub features that are in the middle that need to be offset to sit on the track */
+.feature-middle {
+    margin-top: 40px;
+}
+
+.hubfeature {
+    text-align: center;
+}
+
+.hubfeature img {
+    margin: 0 auto;
+}
+
+.hubfeatures {
+    background: url("../assets/line.svg");
+    background-position:  top center;
+    background-repeat: no-repeat;
+    /* Padding that is used to make the hubfeature circles sit on track */
+    padding-top: 48px;
+}
+
+.arcfeature {
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center;
+    width: 248px;
+}
+
+footer .arcfeature {
+    height: 300px;
+}
+
+.arcfeature .front img, .arcfeature .front2 img, .arcfeature .front3 img, .arcfeature .front4 img {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.arcfeature .back p {
+    margin-top: 40px;
+}
+
+.arc-button {
+    background-color: #8D8D8D;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 26px;
+    text-decoration: none;
+}
+
+#arcfeature1 a:hover, #protocol a:hover, #kernel a:hover {
+    background-color: #DB5106;
+    box-shadow: 0 3px #863001;
+}
+
+.card {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.bt, .bt1, .bt2 {
+    cursor: default;
+}
+
+.card .front, .card .front2, .card .front3, .card .front4 {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 275px;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.3s linear 0s;
+    transition: transform 0.3s linear 0s;
+    width: 215px;
+}
+
+footer .card .front, footer .card .front2, footer .card .front3{
+	width: 275px;
+}
+
+.flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.content-back p{
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.card .back{
+    text-align: center;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.arcfeature a {
+    color: white;
+    text-decoration: none;
+}
+
+.arcfeature img {
+    margin: 0 auto;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
+.arcfeature {
+    display: inline-block;
+}
+
+#visualization svg{
+    display: block;
+    margin: 0 auto;
+}
+
+.council-member-photo {
+    width: 200px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.card-header {
+    float:left;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.card-info {
+    float:left;
+    font-size: 13px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.card-link a {
+    color: #F27624;
+    float: left;
+    font-size: 15px;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-link a:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .section-white, .section-grey {
+    padding: 56px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+    .nb-highlight-text {
+        margin-top: 70px !important;
+    }
+    #allSelectDiv{
+    	margin-top: 0px !important;
+    	padding-top: 35px !important;
+    }
+    .notebook-features .language-set h2{
+        padding-top: 0;
+    }
+    .notebook-features #feature {
+        padding-top: 4px;
+    }
+    .notebook-preview p {
+        font-size: 15pt;
+        line-height: 25pt;
+    }
+    .companies li{
+        width:23%;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.375;
+    }
+    
+    footer p{
+    	font-size: 18px;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: lighter;
+        color: #4a5568;
+        line-height: 1.8;
+        font-family: '微软雅黑';
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.25;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.05em;
+    }
+}
+
+@media (max-width: 992px) {
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25em;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.11em;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: lighter;
+        color: #4a5568;
+        line-height: 1.8;
+        font-family: '微软雅黑';
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.153em;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.25em;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25em;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.11em;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: lighter;
+        line-height: 1.8em;
+        color: #4a5568;
+        font-family: '微软雅黑';
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.153em;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.25em;
+    }
+    
+	.nb-highlight-text {
+	    margin-top: 30px !important;
+	    text-align: center;
+        padding-top: 0 !important;
+	}
+}
+
+@media (max-width: 330px) {
+	.card .front, .card .front2, .card .front3, .card .front4{
+		width: 230px;
+	}
+	
+	footer .card .front, footer .card .front2, footer .card .front3{
+		width: 250px;
+	}
+}
