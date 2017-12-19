@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta content="米多客" name="Keywords">
+		<meta content="米多客" name="Description">
+		<meta name="Author" content="www.miyunchuanmei.com" />
+		<link rel="shortcut icon" href="img/miyun.png" />
+		<title>米多客-功能亮点-CRM管理系统</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/crm.css">
+		
+	    <style type="text/css">
+			@font-face {
+				font-family: 'FZLTXHK 2';
+				src: url(font/FZLTXHK 2.TTF);
+			}
+			
+			body,
+			html {
+				overflow: hidden;
+				overflow-y: auto;
+				background: #fbfcfd;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: '微软雅黑';
+				font-weight: lighter;
+				font-size: 20px;
+			}
+			
+			a:focus,
+			a:hover {
+				text-decoration: none !important;
+			}
+			
+			.my-navbar {
+				padding: 10px 20px;
+				transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+				border-bottom: 1px solid rgba(255,255,255,0.2);
+			}
+			
+			.navbar-nav a {
+				background: transparent !important;
+				color: #4a5568 !important\9;
+				color: #fff;
+				opacity: 0.6;
+				font-size: 14px;
+			}
+			
+			.navbar-nav a:hover {
+				color: #4a5568 !important\9;
+				color: #fff;
+				background: transparent;
+				outline: 0;
+				opacity: 1;
+			}
+			
+			.navbar-nav a {
+				transition: color 0.5s ease-in-out;
+			}
+			
+			.top-nav {
+				padding: 10px 20px;
+				background: #fff;
+				border: 0;
+				box-shadow: 0 2px 8px #f1f1f1;
+			}
+			
+			.top-nav .navbar-nav a,
+			.top-nav .navbar-brand {
+				color: #000 !important;
+			}
+			
+			button.navbar-toggle {
+				background-color: #fbfbfb;
+			}
+			
+			button.navbar-toggle>span.icon-bar {
+				background-color: #dedede
+			}
+			
+			.navbar-brand {
+				float: left;
+				height: 50px;
+				padding: 0;
+				font-size: 18px;
+				line-height: 48px;
+			}
+			
+			.navbar-nav li.active a {
+				opacity: 1;
+			}
+			
+			.blockIcon {
+				background: url(img/icon-s.png) no-repeat 0 0;
+				width: 110px;
+				height: 26px;
+				display: inline-block;
+				vertical-align: middle;
+				*margin-top: 12px;
+			}
+			
+			.whiteIcon {
+				background: url(img/icon-s.png) no-repeat 0px -27px;
+				width: 110px;
+				height: 26px;
+				display: inline-block;
+				vertical-align: middle;
+				*margin-top: 12px;
+			}
+			
+			.container-fluid {
+				padding-right: 0;
+				padding-left: 0;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			/*nav css end*/
+			
+			h1 {
+				font-family: 'FZLTXHK 2';
+				font-weight: lighter;
+				font-size: 42px;
+				margin-top: 20px;
+				margin-bottom: 25px;
+				text-shadow: none;
+			    text-align: left;
+    			color: #fff;
+			}
+			
+			.carousel-caption p {
+				margin-bottom: 60px;
+				font-size: 20px;
+				line-height: 1.8;
+				text-shadow: none;
+			}
+			
+			.carousel-caption{
+				padding-bottom: 110px\9;
+			}
+			
+			.buttonA {
+				color: #fff !important;
+				text-decoration: none;
+				border: 1px solid #fff;
+				padding: 12px 52px;
+				border-radius: 40px;
+				font-size: 22px;
+				margin-right: 20px;
+			}
+			
+			#btn1:hover {
+				background: #48b4dc;
+			}
+			
+			#btn2:hover {
+				background: #4a9ad4;
+			}
+			
+			#btn3:hover {
+				background: #16397e;
+			}
+			
+			#btn4 {
+				color: #1d2f64 !important;
+				background: #fff;
+			}
+			
+			#btn4:hover {
+				background: #e8ecf3;
+			}
+			
+			.carousel-inner {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+				height: auto;
+			}
+			
+			#secondDiv {
+				width: 450px;
+				text-align: left;
+				margin-left: 90px;
+				margin-bottom: 30px;
+			}
+			
+			#thirdDiv {
+				width: 450px;
+				text-align: left;
+				margin-left: 90px;
+				margin-bottom: 120px;
+			}
+			
+			#thirdDiv h1 {
+				margin-bottom: 90px;
+			}
+			
+			#thirdDiv p {
+				margin-bottom: 10px;
+			}
+			
+			@media (max-width: 1000px) {
+				.carousel-inner>.item>a>img,
+				.carousel-inner>.item>img,
+				.thumbnail a>img,
+				.thumbnail>img {
+					display: block;
+					max-width: none;
+				}
+				
+				h1 {
+					font-size: 24px;
+				}
+				.carousel-caption p {
+					margin-bottom: 60px;
+					font-size: 14px;
+					line-height: 1.8;
+				}
+				.buttonA {
+					color: #fff !important;
+					text-decoration: none;
+					border: 1px solid #fff;
+					padding: 5px 28px;
+					border-radius: 40px;
+					font-size: 14px;
+				}
+				.carousel-caption {
+					position: absolute;
+					right: 15%;
+					bottom: 20px;
+					left: 15%;
+					z-index: 10;
+					padding-top: 20px;
+					padding-bottom: 10px;
+					color: #fff;
+					text-align: center;
+					text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+				}
+				.carousel-inner>.item>img {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					height: 500px;
+					margin: -250px 0 0 -693px;
+				}
+				#secondDiv {
+					width: auto;
+					text-align: center;
+					margin: 0;
+				}
+				#thirdDiv {
+					width: auto;
+					text-align: center;
+					margin: 0;
+					margin-bottom: 100px;
+				}
+				#secondDiv p {
+					font-size: 18px !important;
+				}
+			}
+			
+			@media (min-width: 768px) {
+				.carousel-caption {
+					right: 20%;
+					left: 20%;
+					padding-bottom: 100px;
+				}
+			}
+			
+			
+			/*内容css*/
+			#address p{
+				color: #4a5568;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				font-weight: lighter;
+			}
+			
+			ul.dropdown-menu a {
+			    border: 0 !important;
+			}
+			.oDiv {
+			    display: inline-block;
+			    background: #fff;
+			    padding: 10px;
+			}
+			
+			.col-md-6{
+				*width:46%;	
+				/*height: 363px;*/
+			    padding-top: 60px;
+			    *padding-top: 30px;
+			}
+			
+			.rights p{
+				*font-size: 13px !important;
+			}
+			.texts{
+				font-size: 18px;
+				color: #4a5568;
+				margin-top: 15px;
+			}
+			#leftDiv{
+			    padding-right: 60px;
+			    *padding-right: 10px;
+			}
+			
+			#rightDiv{
+				padding-left: 60px;
+				*padding-left: 10px;
+				*float: right;
+			}
+			#linkDiv a{
+				color: #7bb6e6;
+				font-size: 14px;
+			}
+			.text-desc{position: absolute; left: 0; top: 0; padding:80px 20px 50px; *padding:0; *padding-top: 10px;*padding-left: 10px;*padding-right: 10px; background-color: #fff; height: 100%; opacity: 0; width: 100%;*width: 90%;}
+			.port-1{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; background: #fff;}
+			.port-1 .text-desc{opacity: 0.9; top: -100%; transition: 0.8s;}
+			.port-1 .text-desc p{
+				color: #4a5568; text-align: left;font-size: 15px !important;line-height: 1.8;*padding-top: 40px;
+			}
+			.port-1 img{transition: 0.5s;text-align: center;display: inline-block;}
+			.port-1.effect-2 .text-desc{top: auto; bottom: -100%;}
+			.port-1.effect-2:hover .text-desc{bottom: 48px; *bottom: 0px; cursor: default;}
+			.imgDivs{
+			    display: inline-block;
+			    background: #fbfcfd;
+			    width: 100%;
+			    *width: auto;
+			    padding: 40px 35px;
+			    margin-bottom: 12px;
+			}
+			.image-box{
+			    border: 7px solid #FFF;
+			}
+			
+			.image-box p{
+				color: #4a5568;
+			}
+			.col-md-3{
+				*width: 22%;
+			}
+			.col-md-offset-2 {
+			    *margin-left: 2%;
+			}
+			.col-md-1 {
+			    *width: 9.33333333%;
+			}
+			
+			@media (max-width: 1415px) {
+				.col-md-offset-2 {
+				    margin-left: 10%;
+				}
+				.col-md-1 {
+				    width: 10.333333%;
+				}
+			}
+			@media (max-width: 1200px) {
+				.rights p {
+				    text-align: center !important;
+				}
+				
+				.lefts, .rights {
+				    text-align: center;
+				    width: 100%;
+				}
+				
+				.oDiv{
+					margin: 10px;
+				}
+				.imgDivs{
+				    padding: 65px 35px;
+				}
+				.col-md-offset-2 {
+				    margin-left: 0;
+				}
+				.col-md-1 {
+				    width: 12.333333%;
+				}
+			}
+			
+			@media (max-width: 768px) {
+				.rights p {
+				    text-align: center !important;
+				}
+				
+				.lefts, .rights {
+				    text-align: center;
+				    width: 100%;
+				}
+				
+				.oDiv{
+					margin: 10px;
+				}
+				
+				#leftDiv{
+				    text-align: center;
+				    padding-right:15px;
+				}
+				
+				#rightDiv{
+				    text-align: center;
+				    padding-left:15px;
+				}
+				.imgDivs{
+				    padding: 40px 35px;
+				}
+				.col-md-offset-2 {
+				    margin-left: 0;
+				}
+				.col-md-1 {
+				    width: 100%;
+				}
+			}
+			
+			/*nav css另一部分*/
+			
+			.arcfeature{
+				*background: transparent;
+			}
+			
+			.card .front, .card .front2, .card .front3, .card .front4{
+				*position: static;
+			}
+			
+			.col-md-4{
+				*width: 30%;
+			}
+			
+			.navbar-nav {
+				float: right\9;
+			}
+				
+			@media (min-width: 768px) {
+				.navbar-nav {
+					float: right;
+					margin: 0;
+				}
+			}
+			
+			@media(max-width:768px){
+				.blockIcon {
+				    background: url(img/shoujiicon-s.png);
+				    width: 110px;
+				    height: 26px;
+				    display: inline-block;
+				    background-size: 147px;
+				    background-repeat: no-repeat;
+				}
+				
+				.whiteIcon {
+					background: url(img/shoujiicon-s.png) 0 -26px;
+				    width: 110px;
+				    height: 26px;
+				    display: inline-block;
+				    background-size: 147px;
+				    background-repeat: no-repeat;
+				}
+				
+				.probationText{
+					font-size: 15px !important;
+				}
+				
+				.probationTextInput{
+					margin-top: 10px;
+				}
+				
+				.mfsy{
+				    height: 32px;
+				    line-height: 32px;
+				    width: 60px;
+				    vertical-align: middle;
+				    background: #fff;
+				    color: #7bb6e6;
+				    display: inline-block;
+				    border-bottom-right-radius: 5px;
+				    border-top-right-radius: 5px;
+				    font-size: 12px;
+				}
+				
+				.ipt {
+				    color: #fefefe;
+				    border: 1px solid #cae2f5;
+				    border-bottom-left-radius: 5px;
+				    border-top-left-radius: 5px;
+				    background: #7bb6e6;
+				    vertical-align: middle;
+				    height: 32px;
+				    line-height: 32px;
+				    width: 195px;
+				    font-size: 14px;
+				    text-indent: 5px;
+				}
+				
+				#iconDiv span {
+				    color: #7bb6e6;
+				    font-size: 17px;
+				    font-weight: bold;
+				}
+				
+				#iconDiv p {
+				    color: #4a5568;
+				    width: 100%;
+				    padding: 0 20px;
+			        line-height: 1.8;
+				}
+				
+				.buttonA {
+					color: #fff !important;
+					text-decoration: none;
+					border: 1px solid #fff;
+					padding: 5px 15px;
+					margin-right: 0;
+					border-radius: 40px;
+					font-size: 14px;
+				}
+				
+				footer .arcfeature{
+					height: 248px;
+				}
+				
+				#companyText{
+					font-size: 18px;
+				}
+				
+				.my-navbar {
+				    background: #162597;
+				}
+				
+				.top-nav{
+					background: #fff;
+				}
+				
+				.navbar-nav .open .dropdown-menu>li>a>img{
+					display: none;
+				}
+				
+			}
+			
+			@media(max-width:330px){
+				#companyText{
+					font-size: 16px;
+				}
+			}
+			
+			footer .card .front, footer .card .front2, footer .card .front3 {
+				text-align: left;
+			}
+			
+			footer .col-md-3{
+				*width: 22%;
+			}
+			
+			.telImg{
+			    background: url(img/icon-s.png) no-repeat 5px -97px;
+			    display: inline-block;
+			    width: 26px;
+			    height: 26px;
+			    vertical-align: middle;
+			    margin-right: 5px;
+		        margin-left: -5px;
+			    margin-top: -3px;
+			}
+			
+			.phoneImg{
+		        background: url(img/icon-s.png) no-repeat -20px -99px;
+			    display: inline-block;
+			    width: 26px;
+			    height: 21px;
+			    vertical-align: middle;
+			    margin-right: 5px;
+			    margin-left: -5px;
+			    margin-top: -2px;
+			}
+			
+			.wechat-b{
+				background: url(img/icon-s.png) no-repeat -44px -96px;
+			    display: inline-block;
+			    width: 27px;
+			    height: 26px;
+			    vertical-align: middle;
+			    margin-right: 5px;
+		        margin-left: -5px;
+			    margin-top: -3px;
+			    cursor: pointer;
+			}
+			
+			.wechat-l{
+				background: url(img/icon-s.png) no-repeat -71px -96px;
+			    display: inline-block;
+			    width: 30px;
+			    height: 26px;
+			    vertical-align: middle;
+		        margin-left: -3px;
+			    margin-top: -3px;
+			}
+			
+			#qrCode {
+		        position: absolute;
+			    width: 200px;
+			    top: -22px;
+			    left: -3px;
+			    *left: auto;
+			    z-index: 0;
+			    padding: 0;
+			    box-shadow: 0 2px 4px #ddd;
+			}
+			
+			footer ul li{
+				list-style: none;
+			}
+			
+			footer a{
+				color: #4a5568 !important;
+				font-size: 14px;
+			}
+			
+			footer .document{
+				font-size: 18px;
+			}
+			
+		    .dropdown-menu img {
+			    display: block;
+			    text-align: center;
+			    margin: 0 auto 15px;
+			}
+			
+		    @media (max-width: 767px){
+				.navbar-nav .open .dropdown-menu {
+				    margin: 0;
+				}
+				.navbar-nav .open .dropdown-menu>li>a {
+				    color: #fff;
+				}
+				.navbar-nav li:nth-child(2){
+					border-bottom: 0 !important;
+				}
+			}
+			
+			@media(min-width:767px){
+				
+				.dropdown-menu>li>a {
+				    padding: 3px 0px;
+				    text-align: center;
+			    }
+			    
+			    .navbar-nav li.active a {
+				    border-bottom: 2px solid #fff;
+				}
+				
+				.top-nav .navbar-nav li.active a {
+				    border-bottom: 2px solid #000;
+				}
+			    
+			    .dropdown-menu li {
+				    display: inline-block;
+				    float: left;
+				    width: 90px;
+			        margin: 0 5px;
+		            padding: 15px 0;
+				}
+				
+				.dropdown-menu {
+				    width: 704px;
+				    margin: 0 0 0 -200px;
+			        top: 60px;
+			    }
+			    
+			    .dropdown-menu li:hover{
+			    	background: #f4f5f8;
+			    }
+				
+				.dropdown-menu {
+				    padding: 0;
+			    }
+			    
+    			.dropdown-menu a{
+					color: #4a5568 !important;
+				}
+				
+				
+			    .dropdown-menu a:hover{
+					color: #4a5568 !important;
+				}
+			}
+			
+			.dropdown-menu li {
+			    display: inline-block\9;
+			    float: left\9;
+			    width: 90px\9;
+		        margin: 0 5px\9;
+	            padding: 15px 0\9;
+			}
+			
+			.dropdown-menu {
+			    width: 704px\9;
+			    margin: 0 0 0 -200px\9;
+		        top: 60px\9;
+		    }
+		    
+		    .dropdown-menu li:hover{
+		    	background: #f4f5f8\9;
+		    }
+			
+			.dropdown-menu {
+			    padding: 0\9;
+		    }
+		    
+		    .navbar-nav A{
+				opacity: 1\9;
+				color: #000 !important\9;
+				*color: #fff !important;
+			}
+			
+			.dropdown-menu a{
+				color: #4a5568 !important\9;
+				*color: #4a5568 !important;
+			}
+			
+		    .dropdown-menu a:hover{
+				color: #4a5568 !important\9;
+			}
+			
+			.dropdown-menu > LI > A{
+				padding: 3px 0\9;
+				text-align: center\9;
+				color: #000 !important\9;
+			}
+			
+			.home-wrapper {
+			    width: 100%;
+			    position: relative;
+			    overflow: hidden;
+			    z-index: 100;
+			    padding: 190px 0 105px 0;
+			    background: url(img/crm-banner.jpg);
+			    background-position: 0px 0px;
+			    background-repeat: no-repeat;
+			    background-attachment: scroll;
+			    background-size: cover;
+			}
+			
+			.lefts, .rights{
+		    	float: left;
+		    }
+		    
+		    .rights p {
+			    text-align: left;
+			    margin-top: 15px;
+			    margin-left: 10px;
+			}
+			
+			.col-md-4.text-center {
+			    float: left;
+			}
+			
+			.document{
+				font-size: 14px;
+				color: #4a5568;
+			    font-weight: lighter;
+			}
+			
+			.select-active h3{
+				font-size: 20px;
+				color: #4a5568;
+				font-weight: 400;
+			}
+			
+			.select-active .nb-desc{
+				font-size: 14px;
+				color: #4a5568;
+				font-weight: 400;
+			}
+			
+			.select h3{
+				font-size: 20px;
+				font-weight: lighter;
+				color: #4a5568;
+			}
+			
+			.select .nb-desc{
+				font-size: 14px;
+				color: #4a5568;
+				font-weight: lighter;
+			}
+			
+			.select-active:hover, .select:hover{
+				cursor: pointer;
+			}
+			
+			.select:hover h3, .select:hover .nb-desc{
+				font-weight: 400;
+			}
+			
+			.listIcon{
+			    width: 8px;
+			    height: 8px;
+			    background: #607cdd;
+			    display: inline-block;
+			    vertical-align: middle;
+			    margin-right: 10px;
+			}
+		</style>
+		<!--[if lt IE 9]>
+		    <script src="js/html5shiv.min.js"></script>
+		    <script src="js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<!--导航栏-->
+		<nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">  
+                    <span class="sr-only">切换导航</span>  
+                    <span class="icon-bar"></span>  
+                    <span class="icon-bar"></span>  
+                    <span class="icon-bar"></span>  
+                </button>
+					<a class="navbar-brand" href="index.html"><span class="blockIcon"></span></a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="opacity: 1;">功能亮点<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="all-channel.html"><img src="img/quanqudaobushu-m.png" >全渠道部署</a>
+								</li>
+								<li>
+									<a href="customer.html"><img src="img/keyuanzhuizong-m.png" >客源追踪</a>
+								</li>
+								<li>
+									<a href="ai.html"><img src="img/AIkefu-m.png" >AI客服</a>
+								</li>
+								<li>
+									<a href="crm.html"><img src="img/CRMguanli-m.png" >CRM管理</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/zhinengduihuafenpei-m.png" >智能对话分配</a>
+									<!--<a href="dialogue.html"><img src="img/zhinengduihuafenpei-m.png" >智能对话分配</a>-->
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/zhinenggongdan-m.png" >智能工单</a>
+									<!--<a href="work.html"><img src="img/zhinenggongdan-m.png" >智能工单</a>-->
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/tongjifenxi-m.png" >统计分析</a>
+									<!--<a href="statistics.html"><img src="img/tongjifenxi-m.png" >统计分析</a>-->
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="download.html">软件下载</a>
+						</li>
+						<li>
+							<a href="javascript:;">更新日志</a>
+							<!--<a href="log.html">更新日志</a>-->
+						</li>
+						<li>
+							<a href="javascript:;">代理相关</a>
+							<!--<a href="agency.html">代理相关</a>-->
+						</li>
+						<li>
+							<a href="javascript:;">帮助中心</a>
+							<!--<a href="help.html">帮助中心</a>-->
+						</li>
+						<li>
+							<a href="contactUs.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--内容区-->
+		<section>
+			<!--banner-->
+			<section id="home_wrapper" class="home-wrapper">
+		        <div class="gradient_overlay"></div>
+		        <div class="container"> 
+		            <div class="row">
+		                <div class="col-md-12 text-center" style="text-align: left;">
+		                    <h1>高端定制CRM管理系统</h1>
+		                    <h1>引导企业产品和服务向正确方向发展</h1>
+		                    <p style="color: #fff;font-size: 18px; margin: 0;font-weight: lighter;">精准数据+量化考核，补全企业数据空点</p>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+			<section>
+			    <div class="section-white">
+			        <div class="notebook-preview">
+			            <div class="container">
+			                <div class="row">
+			                	<h3 style="text-align: center;">顾客全方位洞察，为顾客量身定制服务</h3>
+			                    <div class="col-md-6">
+			                        <img class="img-responsive" src="img/crm1.png" />
+			                    </div>
+			                    <div class="col-md-6 nb-highlight-text">
+			                        <h4 class="nb-desc"><span class="listIcon"></span>客户来源/关键词/着陆页/浏览轨迹等客户行为完整统计，让营销效果有迹可循</h4>
+			                        <h4 class="nb-desc"><span class="listIcon"></span>客户会话/消息记录/工单反馈/人群画像等，提供企业大数据基础</h4>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<section>
+			    <div class="section-grey">
+			        <div class="notebook-preview">
+			            <div class="container">
+			                <div class="row">
+			                	<h3 style="text-align: center;">多重技术保障，稳定不丢信息</h3>
+			                    <div class="col-md-6">
+			                        <img class="img-responsive" src="img/crm2.png" />
+			                    </div>
+			                    <div class="col-md-6 nb-highlight-text" style="margin-top: 40px;">
+			                    	<h3><span class="listIcon"></span>数据安全</h3>
+			                        <h4 class="nb-desc">所有程序和数据都纳入阿里云安防体系，拥有国内最高级别的安全防护与数据监控措施确保系统的稳定性与数据的安全性，保证数据不丢失不泄露</h4>
+			                    	<h3><span class="listIcon"></span>隐私安全</h3>
+			                        <h4 class="nb-desc">所有隐私信息都经过加密处理，防止任何人包括公司员工不当获取信息，降低人为导致的数据被滥用的可能性</h4>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<section id="linkDiv">
+			    <div class="section-white" style="padding:56px 0;*background:#fbfcfd !important;">
+			        <div class="notebook-preview">
+			            <div class="container-fluid">
+			                <div class="col-md-12 text-center">
+			                	<h4 style="text-align: center;margin-bottom: 30px;font-size: 22px;font-weight: lighter;color: #4a5568;">是否想了解</h4>
+			                	<div class="col-md-offset-2 col-md-1"><a href="all-channel.html">全渠道部署</a></div>
+			                	<div class="col-md-1"><a href="customer.html">客源追踪</a></div>
+			                	<div class="col-md-1"><a href="ai.html">AI客服</a></div>
+			                	<div class="col-md-1"><a href="crm.html">CRM管理</a></div>
+			                	<div class="col-md-1"><a href="javascript:;">智能对话分配</a></div>
+			                	<div class="col-md-1"><a href="javascript:;">智能工单</a></div>
+			                	<div class="col-md-1"><a href="javascript:;">统计分析</a></div>
+			                	<div class="col-md-1"><a href="javascript:;">帮助中心</a></div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<section style="padding: 50px 0; background: #fbfcfd;">
+				    	
+	            <div class="container">
+	            	<div class="col-md-12 text-center" style="margin-bottom: 30px;">
+		            	<h3>更多功能列表</h3>
+		            </div>
+		            <div class="col-md-12 text-center">
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkexinxiguanli.png">
+		                    		</div>
+			                        <p>访客信息关联</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>以访客为轴心，营销时产生的所有对话及工单都会记录，帮助企业进行完整营销效果评估。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/duoqudaojieru.png">
+		                    		</div>
+			                        <p>多渠道接入</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>桌面网站|移动网站|App|微信个人号|微信公众号|微信小程序，客服可以在一个后台接待所有渠道来访的用户。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/duozhongjiedaifangshi.png">
+		                    		</div>
+			                        <p>多种接待方式</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>企业可根据自身的业务场景来决定采用人工客服还是机器人客服的方式进行接待，也可以配置为人工客服优先接待或智能机器人客服优先接待。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/kefufenzu.png">
+		                    		</div>
+			                        <p>客服分组</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>企业可根据自身的业务需要配置不同的客服分组，并配置相关技能组下的客服人员，更有针对性解决客服提出的问题。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+		            </div>
+		            
+		            <div class="col-md-12 text-center" style="margin:20px 0 0">
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fumeitigoutong.png">
+		                    		</div>
+			                        <p>富媒体沟通</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>除了纯文字，客服还可以通过表情、图片、富文本、超链接等多种方式回答问题，让用户和客服之间的沟通不再单一。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/huihuazidongyingda.png">
+		                    		</div>
+			                        <p>会话自动应答</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>可对一些特定的场景，例如客服不在线、超时无响应等场景，进行一些自动应答的偏好设置。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/zidongtankuangyaoqing.png">
+		                    		</div>
+			                        <p>自动弹窗邀请</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>用户浏览网站的过程中，系统可自动弹窗邀请用户加入咨询。对于有咨询意向的用户而言，减少了其发起咨询的操作，大幅提升用户体验。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/kefuzhudongyaoqinghuihua.png">
+		                    		</div>
+			                        <p>客服主动邀请会话</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>客服可以选择对正在排队或正在浏览网站的用户发起主动会话邀请，主动拉近用户距离，并进一步促进了订单的转化。</p>
+			                    </div>
+			                </div>
+			            </div>
+		            </div>
+		            
+		            <div class="col-md-12 text-center" style="margin:20px 0 0">
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/liaotianxinxitongbu.png">
+		                    		</div>
+			                        <p>聊天信息同步</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>人工客服和用户建立新的会话后，可看到用户曾经和其他人工客服或机器人客服的聊天记录，帮助客服更好地定位用户问题，减少信息断层。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkeshenfenhuaxiang.png">
+		                    		</div>
+			                        <p>访客身份画像</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>客服在接待用户时可看到用户的基础信息，包括昵称、联系方式、订单记录等，更有自定义画像字段，丰富并完善企业客服CRM系统。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkelaiyuan.png">
+		                    		</div>
+			                        <p>访客来源</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>可根据客户来源渠道、搜索词、受访页面、着陆页面等多个维度查询访客的相关来源信息，更好帮助企业分析线索的投放情况。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkeliulanhenji.png">
+		                    		</div>
+			                        <p>访客浏览痕迹</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>客服在接待用户时可查看用户在各个页面的访问轨迹，从而更好地了解到用户的真实需求，减少沟通成本的同时促进订单转化提升。</p>
+			                    </div>
+			                </div>
+			            </div>
+		            </div>
+		            
+		            <div class="col-md-12 text-center" style="margin:20px 0 0">
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkefangwenfenxi.png">
+		                    		</div>
+			                        <p>访客访问分析</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>管理者可通过会话和访客两个维度查询各个渠道的用户来访数据，并可以选择不同参数来自定义查询报表和导出报表。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/kefugongzuoliangfenxi.png">
+		                    		</div>
+			                        <p>客服工作量分析</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>企业管理员不仅可以对客服的整体工作情况进行直观地查看以及统计分析，而且可以针对性地查看具体单个客服的接待情况。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/huihuajilu.png">
+		                    		</div>
+			                        <p>会话记录</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>管理员可以通过不同条件自定义查询人工客服或机器人客服的接待情况，查看完整会话记录。据此，企业可以更好地进行服务质量监控。</p>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-md-3 text-center">
+			            	<div class="port-1 effect-2">
+			                	<div class="image-box">
+			                    	<div class="imgDivs">
+			                    		<img class="img-responsive" src="img/fangkemanyidupingjia.png">
+		                    		</div>
+			                        <p>访客满意度评价</p>
+			                    </div>
+			                    <div class="text-desc">
+			                        <p>访客不仅可以在会话结束后对人工客服的工作进行满意度评价，而且可以在评价时选择相应的评价标签。</p>
+			                    </div>
+			                </div>
+			            </div>
+		            </div>
+		            
+	            </div>
+	            
+		    </section>
+		</section>
+		<footer>
+			<div class="section-white" style="padding: 56px 0 20px;">
+		        <div class="container">
+		            <div class="architecturecontent row col-md-12" style="*margin-left: -38%;">
+		                <div class="card col-md-3">
+		                    <div class="arcfeature" id="footer1">
+		                        <div class="container">
+		                            <div class="front">
+		                            	<a href="index.html"><img src="img/footer-logo.png" ></a>
+		                                <p id="companyText" style="color: #4a5568;margin-bottom: 30px;">新客服的践行者，新客服连接未来</p>
+		                                <p style="color: #4a5568; font-size: 16px;"><span class="telImg"></span>0411-39554912</p>
+		                                <p style="color: #4a5568; font-size: 16px;"><span class="phoneImg"></span>13998631271（投诉电话）</p>
+		                                <p style="color: #4a5568; font-size: 14px;">
+		                                	<!--二维码-->
+		                                	<img src="img/qrcode.png" id="qrCode" style="display: none;">
+		                                	<span class="wechat"><b class="wechat-b"></b></span>关注米多客，获取更多一手资讯
+		                                </p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="card col-md-3">
+		                </div>
+		                <div class="card col-md-3">
+		                    <div class="arcfeature">
+		                        <div class="container">
+		                            <div class="front2">
+		                            	<p class="document">产品</p>
+		                                <ul class="productUl">
+		                                	<li><a href="all-channel.html">全渠道部署</a></li>
+		                                	<li><a href="customer.html">客源追踪</a></li>
+		                                	<li><a href="ai.html">AI客服</a></li>
+		                                	<li><a href="crm.html">CRM管理</a></li>
+		                                	<li><a href="javascript:;">智能对话分配</a></li>
+		                                	<li><a href="javascript:;">智能工单</a></li>
+		                                	<li><a href="javascript:;">统计分析</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="card col-md-3">
+		                    <div class="arcfeature" id="footer3">
+		                        <div class="container">
+		                            <div class="front3">
+		                                <p class="javascript:;">帮助支持</p>
+		                                <!--<p class="document.html">帮助支持</p>-->
+		                                <ul class="helpUl">
+		                                	<li><a href="javascript:;">代理相关</a></li>
+		                                	<li><a href="javascript:;">帮助中心</a></li>
+		                                	<!--<li><a href="agency.html">代理相关</a></li>
+		                                	<li><a href="help.html">帮助中心</a></li>-->
+		                                	<li><a href="contactUs.html">联系我们</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="container" style="border-top: 1px solid #edeef0; padding-top: 15px;">
+		        	<div class="row col-md-12">
+		        		<p><span style="color: #4a5568; font-size: 12px; float: left; display: inline-block;">&copy; 大连米云科技有限公司</span><span style="color: #4a5568; float: right; display: inline-block;"><a style="font-size: 12px;vertical-align: middle;display: block;" target="_blank" href="http://www.miibeian.gov.cn">辽ICP备14007560号-6</a></span></p>
+		        	</div>
+		        </div>
+		    </div>		
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				//划过二维码
+				$(".wechat").hover(function() {
+					$(this).find('b').attr('class', 'wechat-l');
+					$('#qrCode').css('display', 'inline-block');
+				}, function() {
+					$(this).find('b').attr('class', 'wechat-b');
+					$('#qrCode').css('display', 'none');
+				});
+				
+				//批量导入，自主学习
+				$('#allSelectDiv div').click(function(){
+					$('#allSelectImg').attr('src', 'img/icon'+ $(this).index() +'.png');
+					$('#allSelectDiv').find('div').attr('class', 'select');
+					$(this).attr('class', 'select-active');
+				});
+
+			});
+
+//			$(window).scroll(function() {
+//				//上下滑动页面，添加或删除class，用来更改导航栏背景色
+//				if($(".navbar").offset().top > 50) {
+//					$(".navbar-fixed-top").addClass("top-nav");
+//					$('.navbar-brand').find('span').attr('class', 'whiteIcon');
+//				} else {
+//					$(".navbar-fixed-top").removeClass("top-nav");
+//					$('.navbar-brand').find('span').attr('class', 'blockIcon');
+//				}
+//			})
+			
+			var resizeTimer = null;
+			$(window).on('scroll', function () {
+			        if (resizeTimer) {
+			            clearTimeout(resizeTimer)
+			        }
+			        resizeTimer = setTimeout(function(){
+			            if($(".navbar").offset().top > 50) {
+							$(".navbar-fixed-top").addClass("top-nav");
+							$('.navbar-brand').find('span').attr('class', 'whiteIcon');
+						} else {
+							$(".navbar-fixed-top").removeClass("top-nav");
+							$('.navbar-brand').find('span').attr('class', 'blockIcon');
+						}
+			        }, 10);
+			    }
+			);
+		</script>
+		<script type="text/javascript">
+		    window._MICHAT = window._MICHAT || function () { (_MICHAT.a = _MICHAT.a || []).push(arguments) };
+		    _MICHAT("accountid", 100000);
+		    _MICHAT("domain", "dev.miduoke.net");
+		    (function (m, d, q, j, s) {
+		        j = d.createElement(q),s = d.getElementsByTagName(q)[0];
+		        j.async = true;
+		        j.charset ="UTF-8";
+		        j.src = ("https:" == document.location.protocol ? "https://" : "http://") + "dev.miduoke.net/Web/JS/mivisit.js?_=t";
+		        s.parentNode.insertBefore(j, s);
+		    })(window, document, "script");
+		</script>
+
+	</body>
+</html>
+
